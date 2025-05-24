@@ -1,0 +1,130 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+  font-size: 1rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#country-list-display {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  height: auto;
+  max-height: 20rem;
+  overflow-y: auto;
+  border-radius: 4px;
+  border: 1px solid var(--color-borde);
+  color: var(--color-texto);
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--color-fondo);
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+}
+
+.country-item:hover {
+  background-color: var(--color-borde);
+}
+
+.country-item img {
+  width: 60px;
+  height: 40px;
+  margin-right: 1rem;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.country-item span {
+  font-weight: bold;
+  color: var(--color-texto);
+}
+
+#search-countries {
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  align-content: center;
+  justify-content: center;
+}
+
+#country-detail-display {
+  display: none;
+  padding: 1rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin-top: 20px;
+}
+
+#country-detail-display img#flag {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin: 0.5rem auto 1.5rem auto;
+  display: block;
+  border: 1px solid var(--color-borde);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#country-detail-display h2,
+#country-detail-display h4 {
+  margin-bottom: 0.5rem;
+}
+
+#country-detail-display h2 span,
+#country-detail-display h4 span {
+  font-weight: normal;
+}
+
+.too-many-results {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#weather-info {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: var(--color-texto);
+  border-top: 1px solid var(--color-borde);
+  padding-top: 15px;
+}
+
+#weather-info img#weather-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border: none;
+  box-shadow: none;
+}
+
+#weather-info span {
+  margin-right: 10px;
+}
+
+:root {
+  color-scheme: light dark;
+  --color-fondo: light-dark(white, black);
+  --color-borde: light-dark(#d6d9dc, #515354);
+  --color-texto: light-dark(black, white);
+  --color-texto-boton: light-dark(white, black);
+  --ancho-pagina: 80rem;
+}

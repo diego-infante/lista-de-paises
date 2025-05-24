@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="global.css" />
+    <title>Buscador de Países</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Buscador de países</h1>
+      <div id="search-wrapper">
+        <input
+          type="text"
+          id="search-countries"
+          placeholder="Nombre del país"
+        />
+      </div>
+      <div id="results-container">
+        <ul id="country-list-display"></ul>
+      </div>
+      <div id="country-detail-display" style="display: none">
+        <img src=" " id="flag" />
+        <h2>Country: <span id="name"></span></h2>
+        <h4>Capital: <span id="Capital"></span></h4>
+        <h4>Region: <span id="Region"></span></h4>
+        <h4>Population: <span id="population"></span></h4>
+        <h4>Currency: <span id="currency"></span></h4>
+        <h4>Language: <span id="language"></span></h4>
+        <div id="weather-info">
+          <img id="weather-icon" src="" alt="Clima" />
+          <span id="weather-description"></span>
+          <span id="weather-temp"></span>
+        </div>
+      </div>
+    </div>
+    <script src="paises.js"></script>
+  </body>
+</html>
